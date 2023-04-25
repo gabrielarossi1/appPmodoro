@@ -36,7 +36,7 @@ function renderTasks(){
     const html = tasks.map(task => {
         return `
             <div class="task">
-                <div class="completed">${task.completed ? `<span class="done">Done</span>` : `<button class="start-button" data-id="${task.id}">Empezar</button>`}</div>
+                <div class="completed">${task.completed ? `<span class="done">Completado</span>` : `<button class="start-button" data-id="${task.id}">Empezar</button>`}</div>
                 <div class="title">${task.title}</div>
             </div>
         `
